@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff6f61;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #ffd166;
+  color: black;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Add Image Section */
+.add-image-section {
+  background-color: #ffcccb;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.add-image-section h2 {
+  color: #d60000;
+}
+
+/* Gallery Section */
+.gallery-section {
+  background-color: #ffeb3b;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.gallery-section h2 {
+  color: #d60000;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid figure {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  border: 3px solid #d60000;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.gallery-grid figcaption {
+  background-color: rgba(255, 111, 97, 0.8);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-grid figure:hover img {
+  transform: scale(1.1);
+  filter: brightness(1);
+}
+
+.gallery-grid figure:hover figcaption {
+  opacity: 1;
+}
+
+/* Contact and To-Do List Section */
+.contact-section, .todo-section {
+  background-color: #ffe6e6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-section h2, .todo-section h2 {
+  color: #d60000;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#contact-form, .todo-section {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff8a66;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
