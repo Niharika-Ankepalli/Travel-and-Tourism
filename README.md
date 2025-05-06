@@ -5,7 +5,7 @@ This is a **Travel and Tourism Website** designed to help users explore various 
 ## 🚀 Live Demo
 [Visit the Website](https://explore-travel-tourism.netlify.app/)
 
-## 🔧 Technologies Used
+## Technologies Used
 - **HTML5**
 - **CSS3**
 - **JavaScript**
