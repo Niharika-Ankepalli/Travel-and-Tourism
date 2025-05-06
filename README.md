@@ -24,4 +24,6 @@ script.js – JavaScript functionalities like interactive features.
 
 images/ – Folder containing all images used in the website.
 
+---
+
 This website showcases your ability to create a user-friendly and responsive travel guide with a focus on interaction and design.
